@@ -681,10 +681,7 @@ static void TetrisManager_MaintainBoard(TetrisManager* tetrisManager){
 	tetrisManager->board[0][BOARD_COL_SIZE - 1] = RIGHT_TOP_EDGE;
 	tetrisManager->board[BOARD_ROW_SIZE - 1][0] = LEFT_BOTTOM_EDGE;
 	tetrisManager->board[BOARD_ROW_SIZE - 1][BOARD_COL_SIZE - 1] = RIGHT_BOTTOM_EDGE;
-<<<<<<< HEAD
 
-=======
->>>>>>> RemoveAllRow
 }
 
 void TetrisManager_Item_RemoveTwoRow(TetrisManager* tetrisManager){
@@ -708,10 +705,6 @@ void TetrisManager_Item_RemoveTwoRow(TetrisManager* tetrisManager){
 	TetrisManager_MaintainBoard(tetrisManager);									//테두리 유지
 
 	_TetrisManager_PrintStatus(tetrisManager, x, y);							//레벨, 제거 라인수, 점수 표시
-<<<<<<< HEAD
-
-}
-=======
 }
 
 void TetrisManager_Item_RemoveAllRow(TetrisManager* tetrisManager){
@@ -750,4 +743,4 @@ static void TetrisManager_SearchAllLineIndexesToDelete(TetrisManager* tetrisMana
 		}
 	}
 }
->>>>>>> RemoveAllRow
+
